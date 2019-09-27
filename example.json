@@ -1,10 +1,17 @@
 {
   "git": {
-    "repository-url": "https://git.repository.url",
-    "clone-path": ".repo"
+    "repository_url": "https://git.repository.url",
+    "clone_path": ".repo"
   },
   "concourse": {
     "target": "target",
+    "job": "job",
     "user": "user"
-  }
+  },
+  "tts": {
+    "words_per_minute": 150,
+    "voice_id": 0,
+    "greeting": "I'm ready to blame you."
+  },
+  "update_rate_seconds": 30
 }

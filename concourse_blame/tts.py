@@ -20,10 +20,10 @@ class TTS:
 
         print('Finished playing examples. Enter the desired voice\'s id in your configuration file.')
 
-    def __init__(self, voice_id: int):
+    def __init__(self, voice_id: int, words_per_minute: int):
         self.tts = pyttsx3.init()
-        self.tts.setProperty('rate', 150)
-        self.tts.setProperty('voice', self.tts.getProperty('voices')[voice_id])
+        self.tts.setProperty('voice', self.tts.getProperty('voices')[voice_id].id)
+        self.tts.setProperty('rate', words_per_minute)
 
     def say(self, text: str):
         self.tts.say(text)
