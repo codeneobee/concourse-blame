@@ -4,8 +4,10 @@ concourse-blame will continuously watch your concourse jobs and play a sound not
 
 ## Requirements
 
-- Python 3 (tested with Python 3.7)
 - git
+- fly
+
+- Python 3 (tested with Python 3.7)
 - pip
 - virtualenv (optional, recommended)
 

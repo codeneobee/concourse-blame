@@ -1,3 +1,4 @@
+import getpass
 import os
 
 
@@ -12,3 +13,10 @@ class ConcourseBlame:
             os.system('git clone --bare {} {}'.format(
                 self.config['git']['repository-url'],
                 self.config['git']['clone-path']))
+
+        # fly login
+        password = getpass.getpass('Enter concourse password: ')
+        os.system('fly login -t {} -u {} -p {}'.format(
+            self.config['concourse']['target'],
+            self.config['concourse']['user'],
+            password))

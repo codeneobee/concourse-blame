@@ -2,5 +2,9 @@
   "git": {
     "repository-url": "https://git.repository.url",
     "clone-path": ".repo"
+  },
+  "concourse": {
+    "target": "target",
+    "user": "user"
   }
 }
