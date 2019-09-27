@@ -11,12 +11,12 @@ if len(sys.argv) < 2:
 
 # voice check
 if sys.argv[1] == '--voices':
-    from concourse_blame import voice
+    from concourse_blame.tts import TTS
 
-    voice.play_system_voices()
+    TTS.play_system_voice_examples()
     exit(0)
 
-# load configuration
+# load configuration and run app
 config_path = sys.argv[1]
 config = {}
 with open(config_path) as config_file:
