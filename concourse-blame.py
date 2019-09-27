@@ -5,6 +5,15 @@ from concourse_blame import ConcourseBlame
 
 if len(sys.argv) < 2:
     print('USAGE: python concourse-blame.py /path/to/config.json')
+    print('       If you just want to check the voices installed on your system, run:')
+    print('       python concourse-blame.py --voices')
+    exit(0)
+
+# voice check
+if sys.argv[1] == '--voices':
+    from concourse_blame import voice
+
+    voice.play_system_voices()
     exit(0)
 
 # load configuration
