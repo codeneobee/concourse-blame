@@ -1,6 +1,8 @@
 import json
 import sys
 
+from concourse_blame import ConcourseBlame
+
 if len(sys.argv) < 2:
     print('USAGE: python concourse-blame.py /path/to/config.json')
     exit(0)
@@ -14,4 +16,5 @@ if not config:
     print('Could not read configuration from file {}'.format(config_path))
     exit(1)
 
-print('It works! {}'.format(config))
+app = ConcourseBlame(config)
+app.run()
