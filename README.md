@@ -1,6 +1,6 @@
 # concourse-blame
 
-concourse-blame will watch your concourse jobs and play a sound notification depending on the result status.
+concourse-blame will continously watch your concourse jobs and play a sound notification depending on the current status.
 
 ## Requirements
 
@@ -10,8 +10,13 @@ concourse-blame will watch your concourse jobs and play a sound notification dep
 
 ## Setup
 
-tbd
+- Create virtual environment `virtualenv venv` and activate it
+- Install dependencies by running `pip install -r requirements.txt`
 
 ## Configuration
+
+tbd
+
+## Usage
 
 tbd
