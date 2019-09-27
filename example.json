@@ -13,5 +13,39 @@
     "voice_id": 0,
     "greeting": "I'm ready to blame you."
   },
-  "update_rate_seconds": 30
+  "update_rate_seconds": 30,
+  "sounds": {
+    "status": {
+      "succeeded": "/path/to/file.mp3",
+      "failed": "/path/to/file.mp3"
+    },
+    "start": "/path/to/file.mp3",
+    "end": "/path/to/file.mp3"
+  },
+  "texts": {
+    "status": {
+      "succeeded": [
+        "Well done, %committer!",
+        "Good job, %committer!"
+      ],
+      "failed": [
+        "You suck, %committer!",
+        "Try again, %committer!"
+      ]
+    },
+    "committer": {
+      "no_team": "%name",
+      "from_team": "%name from team %team"
+    }
+  },
+  "teams": {
+    "team 1": [
+      "person 1",
+      "person 2"
+    ],
+    "team 2": [
+      "person 3",
+      "person 4"
+    ]
+  }
 }
