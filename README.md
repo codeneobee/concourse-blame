@@ -4,12 +4,14 @@ concourse-blame will continuously watch your concourse jobs and play a sound not
 
 ## Requirements
 
-- git
-- fly
-
+For installation:
 - Python 3 (tested with Python 3.7)
 - pip
 - virtualenv (optional, recommended)
+
+For usage:
+- git
+- fly
 
 ## Setup
 
@@ -18,8 +20,12 @@ concourse-blame will continuously watch your concourse jobs and play a sound not
 
 ## Configuration
 
-tbd
+See example.json file for configuration parameters.
 
 ## Usage
 
-tbd
+`python concourse-blame.py /path/to/config.json`
+
+If you just want to check the voices installed on your system, run:
+
+`python concourse-blame.py --voices`
