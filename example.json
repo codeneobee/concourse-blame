@@ -1,3 +1,6 @@
 {
-  "something": "something else"
+  "git": {
+    "repository-url": "https://git.repository.url",
+    "clone-path": ".repo"
+  }
 }

@@ -1,10 +1,11 @@
 # concourse-blame
 
-concourse-blame will continously watch your concourse jobs and play a sound notification depending on the current status.
+concourse-blame will continuously watch your concourse jobs and play a sound notification depending on the current status.
 
 ## Requirements
 
 - Python 3 (tested with Python 3.7)
+- git
 - pip
 - virtualenv (optional, recommended)
 
